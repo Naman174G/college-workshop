@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Gurutav Patel</title>
+  <style>
+    :root{
+      --accent:#0b7fab;
+      --muted:#6b7280;
+      --bg:#f6f8fa;
+      --card:#ffffff;
+      --line:rgba(0,0,0,0.08);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);}
+    .container{
+      max-width:900px;
+      margin:30px auto;
+      background:var(--card);
+      box-shadow:0 6px 18px rgba(11,21,32,0.08);
+      border-radius:10px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:260px 1fr;
+    }
+
+    /* LEFT COLUMN: profile */
+    .left{
+      background:linear-gradient(180deg, #f3fafc 0%, #eef9fb 100%);
+      padding:28px 20px;
+      border-right:1px solid var(--line);
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:center;
+    }
+    .photo{
+      width:140px;height:140px;border-radius:12px;overflow:hidden;border:6px solid #fff;box-shadow:0 6px 18px rgba(11,21,32,0.06);
+      background:linear-gradient(135deg,var(--accent),#7dd3fc);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:18px;
+    }
+    .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+    .name{font-size:20px;font-weight:700;color:#073642;text-align:center;margin-top:6px}
+    .title{font-size:13px;color:var(--muted);text-align:center}
+
+    .contact{width:100%;margin-top:6px}
+    .contact-item{font-size:13px;color:#1f2937;padding:8px 0;border-bottom:1px dashed var(--line)}
+    .label{display:block;font-size:11px;color:var(--muted);}
+
+    /* RIGHT COLUMN: main content */
+    .right{padding:26px 30px}
+    header h1{margin:0;font-size:24px;color:#062a2f}
+    header p{margin:4px 0 16px;color:var(--muted)}
+
+    section{margin-bottom:18px}
+    .section-title{
+      display:flex;align-items:center;justify-content:space-between;margin-bottom:8px
+    }
+    .section-title h3{margin:0;font-size:16px;color:#093540}
+    .hr{height:2px;background:linear-gradient(90deg,transparent,#cfeff4,transparent);border-radius:2px;margin:8px 0}
+
+    .objective{color:#344054;font-size:14px;line-height:1.5}
+
+    .education-item{margin-bottom:10px}
+    .edu-degree{font-weight:600}
+    .edu-meta{font-size:13px;color:var(--muted)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#f1fbfe;padding:6px 10px;border-radius:999px;font-size:13px;border:1px solid rgba(11,21,32,0.04)}
+
+    .details-list{list-style:none;padding:0;margin:0}
+    .details-list li{padding:6px 0;border-bottom:1px dashed var(--line);color:#243746}
+
+    .footer{font-size:13px;color:var(--muted);margin-top:8px}
+
+    /* responsive */
+    @media (max-width:720px){
+      .container{grid-template-columns:1fr;}
+      .left{flex-direction:row;gap:12px;padding:12px;align-items:center}
+      .photo{width:84px;height:84px}
+      .right{padding:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="left">
+    <div class="photo">
+  <img src="photo.jpg" alt="My Photo">
+</div>
+
+      <div style="text-align:center; width:100%;">
+        <div class="name">Gurutav Patel</div>
+        <div class="title">Aspiring Web Developer</div>
+
+        <div class="contact">
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <div>gurutavp174@example.com</div>
+          </div>
+          <div class="contact-item">
+            <span class="label">Phone</span>
+            <div>+91 8982443125</div>
+          </div>
+          <div class="contact-item">
+            <span class="label">Address</span>
+            <div>Banda, MP, 470335</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right">
+      <header>
+        <h1>Resume</h1>
+        <p>💻 “Passionate web developer focused on building modern and user-friendly applications.”.</p>
+      </header>
+
+      <section>
+        <div class="section-title"><h3>Objective</h3></div>
+        <div class="hr"></div>
+        <p class="objective">To obtain an internship/position where I can apply my skills in web development, improve through real-world projects, and contribute to the team while continuing to learn.</p>
+      </section>
+
+      <section>
+        <div class="section-title"><h3>Academics</h3></div>
+        <div class="hr"></div>
+        <div class="education-item">
+          <div class="edu-degree">B.Tech / B.E. - Computer Science</div>
+          <div class="edu-meta">GSCE — 2022 - Present | CGPA: 7.2</div>
+        </div>
+        <div class="education-item">
+          <div class="edu-degree">12th (Board)</div>
+          <div class="edu-meta">Saraswati Shishu Mandir Higher Secondary School — 2022 | Percentage: 88%</div>
+        </div>
+        <div class="education-item">
+          <div class="edu-degree">10th (Board)</div>
+          <div class="edu-meta">Saraswati Shishu Mandir Banda — 2020| Percentage: 92%</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title"><h3>Skills</h3></div>
+        <div class="hr"></div>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Git</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title"><h3>Details / Projects</h3></div>
+        <div class="hr"></div>
+        <ul class="details-list">
+          <li><strong>College Resource Finder</strong> — Aggregator website built with MERN stack (link/github).</li>
+          <li><strong>Quiz App</strong> — HTML/CSS/JS quiz deployed on GitHub Pages.</li>
+          <li><strong>Other</strong> — 🧩 “Portfolio website showcasing my projects and skills using HTML, CSS, and JavaScript.”</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="section-title"><h3>Hobbies</h3></div>
+        <div class="hr"></div>
+        <p class="objective">Coding challenges, reading tech blogs, cricket, and photography.</p>
+      </section>
+
+      <div class="footer">Last updated: Oct 2025</div>
+    </main>
+  </div>
+</body>
+</html>
